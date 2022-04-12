@@ -132,8 +132,12 @@ img {
 }
 .head-adress-link:hover,
 .head-adress-link:focus,
-.head-adress-link:active {
+.head-adress-link:active,
+.head-icon:hover,
+.head-icon:focus,
+.head-icon:active {
   color: var(--secondary-color);
+  fill: var(--secondary-color);
 }
 .head-icon {
   display: inline-flex;
@@ -141,10 +145,6 @@ img {
   justify-content: center;
   fill: var(--grey-color);
   margin-right: 10px;
-}
-.head-icon:hover,
-.head-icon:focus {
-  fill: var(--secondary-color);
 }
 
 /*====H2 to section=====*/
