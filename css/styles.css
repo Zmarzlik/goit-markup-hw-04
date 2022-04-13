@@ -17,6 +17,7 @@
   --caption-shadow: rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  --background-hero: rgba(47, 48, 58, 0.4);
 }
 body {
   font-family: var(--main-font);
@@ -163,10 +164,13 @@ img {
 /*=====section:EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU=======*/
 
 .hero {
-  background-color: var(--background-color);
   display: flex;
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient (var(--background-hero, --background-hero), url("../images/imgbackground1.jpg"))
 }
 .hero .hero-content-title {
   width: 696px;
@@ -185,7 +189,6 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--white-color);
-  
   padding-bottom: 30px; 
 }
 .hero-content-button {
