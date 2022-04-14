@@ -179,7 +179,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
-  background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("./images/imgbackground1.jpg");
+  background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("../images/imgbackground1.jpg");
   
 }
 .hero .hero-content-title {
