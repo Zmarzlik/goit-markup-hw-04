@@ -557,7 +557,7 @@ padding-bottom: 50px;
 .button-portfolio:hover,
 .button-portfolio:focus {
   background-color: var(--secondary-color);
-  box-shadow: var(--button-box-shadow);
+  box-shadow: var(--menu-button-box-shadow);
   color: var(--white-color);
   cursor: pointer;
 }
