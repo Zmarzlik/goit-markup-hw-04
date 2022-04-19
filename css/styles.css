@@ -17,7 +17,7 @@
   --caption-shadow: rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-   --icon-first-color: #AFB1B8;
+  --icon-first-color: #AFB1B8;
   --icon-second-color: rgba(255, 255, 255, 0.1);
   --portfolio-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -38,17 +38,14 @@ h6 {
   margin: 0;
   padding: 0;
 }
-
 ul {
   padding: 0;
   margin: 0;
 }
-
 p {
   padding: 0;
   margin: 0;
 }
-
 img {
   display: block;
 }
@@ -63,11 +60,9 @@ img {
 .head {
   border-bottom: 1px solid var(--white-border-color)
 }
-
 .head .container{
   display: flex;
   align-items: center;
-  
   margin-left:auto;
 }
 .logo {
@@ -138,6 +133,7 @@ img {
   color: var(--grey-color);
 }
 .head-adress-link:hover,
+.head-adress-link:hover .head-icon,
 .head-adress-link:focus,
 .head-adress-link:active,
 .head-icon:hover,
@@ -569,57 +565,46 @@ padding-bottom: 50px;
 
 /*======divison portfolio====*/
 
-
 .portfolio-list {
-  list-style: none;
-  font-style: normal;
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 0px;
-  padding-bottom: 94px;
-
- 
- 
- }
-.portfolio-list-item{
- 
-  width: 370px;
-  color: var(--main-color);
-  flex-basis: calc(100%/3 - 10px);
+  margin-bottom: 94px;
+}
+.portfolio-list-item {
+  margin-left: 15px;
+  margin-top: 15px;
   margin-bottom: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+  max-width: 370px;
+}
+.portfolio-list-item:hover,
+.portfolio-list-item:focus {
+  cursor: pointer;
+  box-shadow: var(--portfolio-shadow);
+
+}
+.portfolio-border {
   border-left: 1px solid var(--white-border-color);
   border-bottom: 1px solid var(--white-border-color);
   border-right: 1px solid var(--white-border-color);
+  width: 370px;
 }
-
-
-
 .portfolio-example {
   font-weight: 700;
   font-size: 18px;
   line-height: 2,000;
   letter-spacing: 0.06em;
-  margin-top: 20px;
-  margin-left: 24px;
-
-  
- 
+  padding-top: 20px;
+  padding-left: 24px;
 }
 .portfolio-description {
   font-size: 16px;
-  line-height: 1,666;
+  line-height: 30px;
   letter-spacing: 0.03em;
-  color: var(--grey-color);
   text-align: left;
-
-
-  margin-top: 20px;  
-  margin-bottom: 20px;
-  margin-left: 24px;
-
-}
-.portfolio-list-item:hover, .portfolio-list-item:focus {
-
-  box-shadow: var(--portfolio-shadow);
+  padding-left: 24px;
+  padding-bottom: 20px;
+  line-height: 1,666;
 }
