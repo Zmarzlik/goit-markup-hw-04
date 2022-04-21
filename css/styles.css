@@ -148,6 +148,8 @@ img {
   justify-content: center;
   fill: var(--grey-color);
   margin-right: 10px;
+  padding-top: auto;
+  padding-bottom: auto;
 }
 
 /*====H2 to section=====*/
